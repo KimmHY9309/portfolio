@@ -1,51 +1,34 @@
 <template>
-    <div class="nav_wrapper">
-        <nav class="navbar navbar-expand-lg navbar-light bg-24292f">
-            <div class="container-fluid">
-                <a class="navbar-brand text-white" href="#">Navbar</a>
-                <button
-                    class="navbar-toggler"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent"
-                    aria-controls="navbarSupportedContent"
-                    aria-expanded="false"
-                    aria-label="Toggle navigation"
-                >
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link active text-white" aria-current="page" href="#">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-white" href="#">Link</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Dropdown </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li><hr class="dropdown-divider" /></li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link disabled text-white" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-                        </li>
-                    </ul>
-                    <form class="d-flex">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-                        <button class="btn btn-outline-success" type="submit">Search</button>
-                    </form>
+    <div class="nav_wrapper bg-24292f d-flex justify-content-between">
+        <div class="d-flex">
+            <div class="text-white me-3">
+                <img src="../assets/hy_white.png" alt="" style="width: 30px; height: 30px" />
+            </div>
+            <div class="text-white me-3">
+                <div class="input-group input-group-sm mb-3">
+                    <input
+                        type="text"
+                        class="form-control"
+                        aria-label="Sizing example input"
+                        aria-describedby="inputGroup-sizing-sm"
+                        placeholder="Search or jump to..."
+                        style="background-color: #24292f; border-color: #57606a; width: 272px"
+                    />
                 </div>
             </div>
-        </nav>
+            <div class="text-white me-3 div-center"><a href="https://github.com/KimmHY9309" target="_blank">Github</a></div>
+            <div class="text-white me-3 div-center"><a href="https://www.linkedin.com/in/hakyoung-kim-1b24b1215/" target="_blank">LinkedIn</a></div>
+        </div>
+        <div class="d-flex">
+            <div class="text-white me-3" style="font-size: 23px"><i class="fab fa-facebook"></i></div>
+            <div class="text-white" style="font-size: 23px"><i class="fab fa-twitter-square"></i></div>
+        </div>
     </div>
 </template>
 
 <script>
+import "../assets/font.css";
+
 export default {};
 </script>
 
@@ -53,5 +36,10 @@ export default {};
 .bg-24292f {
     background-color: #24292f;
     height: 62px;
+    padding: 16px 32px;
+}
+.div-center {
+    line-height: 30px;
+    font-weight: 500;
 }
 </style>

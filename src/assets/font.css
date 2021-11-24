@@ -1,0 +1,37 @@
+.fs-12 {
+    font-size: 12px;
+}
+.fs-14 {
+    font-size: 14px;
+}
+.fs-18 {
+    font-size: 18px;
+}
+.fw-500 {
+    font-weight: 500;
+}
+
+.border-box {
+    border: solid 1px #dbdbdb;
+    border-radius: 5px;
+    padding: 16px;
+}
+.font-first {
+    font-weight: bold;
+    margin-top: 4px;
+}
+.font-second {
+    font-size: 14px;
+}
+
+.project-title {
+    background-color: cornsilk;
+}
+a {
+    text-decoration-line: none;
+    color: white;
+}
+a:hover {
+    color: white;
+    opacity: 0.5;
+}
